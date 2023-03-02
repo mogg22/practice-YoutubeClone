@@ -1,0 +1,214 @@
+
+/*:root {
+    --white-color: #fff;
+    --black-color: #140100;
+    --blue-color: #045fd4;
+    --red-color: #ff0000;
+    --grey-dark-color: #909090;
+    --grey-light-color: #e0e0e0;
+
+    --side-padding: 12px;
+    --avatar-size: 36px;
+
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+button:focus {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #140100;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 18px;
+}
+
+header .logo i {
+    color: #ff0000;
+}
+
+header .icons .fa-search {
+    margin-right: 12px;
+}
+
+.player {
+    position: sticky;
+    text-align: center;
+    background-color: #140100;
+}
+
+.player video {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+}
+
+.info {
+    padding: 12px;
+}
+
+.hashtags {
+    display: flex;
+    font-size: 12px;
+    color: #045fd4;
+}
+
+.hashtags li {
+    margin-right: 14px;
+}
+
+.info .metadata .titleButton {
+    display: flex;
+}
+
+.info .metadata .titleButton .title {
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.info .metadata .titleButton .moreButton {
+    height: 100%;
+    background-color: #fff;
+}
+
+.info .views {
+    font-size: 12px;
+    color: #909090;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin: 12px 0;
+}
+
+.actions button {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    background-color: #fff;
+    color: #909090;
+}
+
+.actions button i {
+    margin: 0 auto;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.actions button i.active {
+    color: #045fd4;
+}
+
+.channel {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.channel .metadata {
+    display: flex;
+    align-items: center;
+}
+
+.channel .metadata .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.channel .metadata img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.channel .metadata .info .name {
+    font-size: 14px;
+}
+
+.channel .metadata .info .subscribers {
+    font-size: 12px;
+    color: #909090;
+}
+
+.channel .subscribe {
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #ff0000;
+    font-size: 14px;
+}
+
+.upNext {
+    padding: 0 14px;
+}
+
+.upNext > .title {
+    font-size: 14px;
+    color: #909090;
+    margin-bottom: 7px;
+}
+
+.upNext .item {
+    display: flex;
+    margin-top: 14px;
+}
+
+.upNext .item .img {
+    flex: 1 1 35%;
+    margin-right: 14px;
+}
+
+.upNext .item .img img {
+    width: 100%;
+}
+
+.upNext .item .info {
+    flex: 1 1 60%;
+}
+
+.upNext .item .more {
+    background-color: #fff;
+    flex: 1 1 5%;
+}
+
+.upNext .item .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.upNext .item .info .title {
+    font-size: 12px;
+}
+
+.upNext .item .info .name,
+.upNext .item .info .views {
+    font-size: 12px;
+    color: #909090;
+}
